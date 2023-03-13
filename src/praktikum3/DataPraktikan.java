@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class DataPraktikan {
 
-//    String email;
+    // String email;
     HashMap<String, String> tabelData = new HashMap<>();
 
-    public boolean tambahData (String nim, String nama) {
+    public boolean tambahData(String nim, String nama) {
         tabelData.put(nim, nama);
         return true;
     }
@@ -30,10 +30,6 @@ public class DataPraktikan {
             System.out.println(value);
         });
     }
-
-//    public int totalEmail() {
-//        return Collections.singletonList(email).size();
-//    }
 
     public boolean hapusData(String nimPraktikan, String namaAssisten) {
         tabelData.remove(nimPraktikan, namaAssisten);
