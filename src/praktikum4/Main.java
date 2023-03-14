@@ -1,3 +1,7 @@
+/**
+ @author: rizkyhaksono
+ */
+
 package praktikum4;
 
 public class Main {

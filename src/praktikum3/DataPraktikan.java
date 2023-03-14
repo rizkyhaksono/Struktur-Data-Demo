@@ -1,3 +1,7 @@
+/**
+ @author: rizkyhaksono
+ */
+
 package praktikum3;
 
 import java.util.HashMap;

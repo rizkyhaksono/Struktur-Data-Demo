@@ -1,3 +1,7 @@
+/**
+ @author: rizkyhaksono
+ */
+
 package praktikum2.latihan1;
 
 import java.util.ArrayList;

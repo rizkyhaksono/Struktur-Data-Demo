@@ -1,5 +1,8 @@
-package praktikum2;
+/**
+ @author: rizkyhaksono
+ */
 
+package praktikum2;
 
 public class LinkedListManual {
 

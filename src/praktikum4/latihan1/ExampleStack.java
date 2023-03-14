@@ -1,3 +1,7 @@
+/**
+ @author: rizkyhaksono
+ */
+
 package praktikum4.latihan1;
 
 import java.util.Stack;

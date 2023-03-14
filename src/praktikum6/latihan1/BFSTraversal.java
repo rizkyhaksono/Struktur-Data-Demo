@@ -1,3 +1,7 @@
+/**
+ @author: rizkyhaksono
+ */
+
 package praktikum6.latihan1;
 
 import java.util.LinkedList;

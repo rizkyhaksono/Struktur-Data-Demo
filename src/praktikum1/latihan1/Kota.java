@@ -1,3 +1,7 @@
+/**
+ @author: rizkyhaksono
+ */
+
 package praktikum1.latihan1;
 
 public class Kota<E> {
