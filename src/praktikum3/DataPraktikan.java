@@ -45,61 +45,63 @@ public class DataPraktikan {
     }
 
     public void searchData(String namaAssisten) {
-        Scanner scn = new Scanner(System.in);
+        try (Scanner scn = new Scanner(System.in)) {
+            System.out.println("Data yang dicari : ");
+            String input = scn.nextLine();
 
-        System.out.println("Data yang dicari : ");
-        String input = scn.nextLine();
-
-        if (namaAssisten.contains(input)) {
-            listNimPraktikan();
-        } else {
-            System.out.println("Data tidak ditemukan");
+            if (namaAssisten.contains(input)) {
+                listNimPraktikan();
+            } else {
+                System.out.println("Data tidak ditemukan");
+            }
         }
     }
 
     public static void main(String[] args) {
 
         DataPraktikan data = new DataPraktikan();
-        Scanner scn = new Scanner(System.in);
+        try (Scanner scn = new Scanner(System.in)) {
+            System.out.print("Masukkan data [nim praktikan] [nama assisten] : ");
 
-        System.out.print("Masukkan data [nim praktikan] [nama assisten] : ");
+            String nim = scn.nextLine();
+            String asisten = scn.nextLine();
 
-        String nim = scn.nextLine();
-        String asisten = scn.nextLine();
+            System.out.println(
+                    "Pilih menu :" +
+                    "\n1. Tambah data" +
+                    "\n2. Cari data" + 
+                    "\n3. Edit data" +
+                    "\n4. Hapus data"
+                    );
 
-        System.out.println("""
-                Pilih menu :
-                1. Tambah data
-                2. Cari data
-                3. Edit data
-                4. Hapus data
-                """);
+            int menu = scn.nextInt();
 
-        int menu = scn.nextInt();
+            switch (menu) {
+                case 1: {
+                    data.tambahData(nim, asisten);
 
-        switch (menu) {
-            case 1 -> {
-                data.tambahData(nim, asisten);
+                    data.listNimPraktikan();
+                    data.listNamaAssisten();
+                }
+                case 2: {
+                    data.searchData(asisten);
+                }
+                case 3: {
+                    System.out.print("Masukkan data baru [nim praktikan] [nama assisten] : ");
+                    String nimBaru = scn.nextLine();
+                    String asistenBaru = scn.nextLine();
 
-                data.listNimPraktikan();
-                data.listNamaAssisten();
+                    data.editData(nimBaru, asistenBaru);
+
+                    data.listNimPraktikan();
+                    data.listNamaAssisten();
+                }
+                case 4: {
+                    data.hapusData(nim, asisten);
+                }
             }
-            case 2 -> {
-                data.searchData(asisten);
-            }
-            case 3 -> {
-                System.out.print("Masukkan data baru [nim praktikan] [nama assisten] : ");
-                String nimBaru = scn.nextLine();
-                String asistenBaru = scn.nextLine();
-
-                data.editData(nimBaru, asistenBaru);
-
-                data.listNimPraktikan();
-                data.listNamaAssisten();
-            }
-            case 4 -> {
-                data.hapusData(nim, asisten);
-            }
+        } catch (Exception e) {
+            System.out.println(e);
         }
 
         data.tampil();
