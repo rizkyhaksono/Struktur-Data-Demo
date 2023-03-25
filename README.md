@@ -1,6 +1,6 @@
 ﻿# Struktur Data Demo
 
-This repository contains the source code of the Data Structure project. This project is made for the Data Structure course at the University of Muhammadiyah Malang. This project is made using Java and Python.
+This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
 <b>⚠️ All codes are my rights and are not allowed to be copied or used without my permission. ⚠️</b>
 
