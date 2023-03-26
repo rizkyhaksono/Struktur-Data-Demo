@@ -3,7 +3,7 @@ __copyright__   = "Copyright 2023, Malang"
 
 from typing import Any, List
 
-class SegitigaPy:
+class Segitiga:
     def __init__(self, alas: int, tinggi: int):
         self.alas = alas
         self.tinggi = tinggi
@@ -18,7 +18,7 @@ class SegitigaPy:
         return f"Segitiga dengan alas {self.alas} dan tinggi {self.tinggi}"
 
 if __name__ == "__main__":
-    segitiga = SegitigaPy(10, 5)
+    segitiga = Segitiga(10, 5)
     print(segitiga)
     print(f"Luas: {segitiga.luas()}")
     print(f"Keliling: {segitiga.keliling()}")

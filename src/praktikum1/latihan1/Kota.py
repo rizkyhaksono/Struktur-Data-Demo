@@ -1,7 +1,7 @@
 __author__      = "rizkyhaksono"
 __copyright__   = "Copyright 2023, Malang"
 
-class KotaPy:
+class Kota:
 
     def __init__(self):
         self.namaKota = "Malang"
@@ -12,5 +12,5 @@ class KotaPy:
         print("Jumlah Kota: " + str(self.jumlahKota))
 
 if __name__ == "__main__":
-    kota = KotaPy()
+    kota = Kota()
     kota.main()

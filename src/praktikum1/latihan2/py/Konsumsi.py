@@ -1,7 +1,7 @@
 __author__      = "rizkyhaksono"
 __copyright__   = "Copyright 2023, Malang"
 
-class KonsumsiPy:
+class Konsumsi:
 
     def setKonsumsi(self, makanan, minuman):
         makan = self.makanan
