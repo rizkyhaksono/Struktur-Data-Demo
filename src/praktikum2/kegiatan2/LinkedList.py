@@ -1,21 +1,43 @@
 __author__      = "rizkyhaksono"
 __copyright__   = "Copyright 2023, Malang"
 
+class Node:
+    def __init__(self, data = None):
+        self.data = data
+        self.next = None
+
 class LinkedList:
     def __init__(self):
-        self.arrays = []
-        self.length = 0
+        self.head = None
 
     def add(self, data):
-        self.arrays.append(data)
-        self.length += 1
+        if self.head is None:
+            self.head = Node(data)
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = Node(data)
 
     def print(self):
-        print(self.arrays)
+        current = self.head
+        while current:
+            print(current.data , end=" ")
+            current = current.next
 
-    def sortData(self, data):
-        self.arrays.sort()
-        self.print()
+    def sortData(self, callback):
+        current = self.head
+        while current:
+            index = current.next
+            while index:
+                if current.data > index.data:
+                    temp = current.data
+                    current.data = index.data                    
+                    index.data = temp
+                index = index.next
+            current = current.next
+        callback()
+    
 
 if __name__ == "__main__":
     arrayList = LinkedList()
@@ -30,6 +52,6 @@ if __name__ == "__main__":
     print("Data before sorting : ")
     arrayList.print()
 
-    print("Data after sorting : ")
-    arrayList.sortData(arrayList.arrays)
+    print("\nData after sorting : ")
+    arrayList.sortData(arrayList.print)
     

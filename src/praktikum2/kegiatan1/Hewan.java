@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Hewan<T> {
     ArrayList<String> namaHewan = new ArrayList<>(List.of("Angsa", "Bebek", "Cicak", "Domba", "Elang", "Gajah"));
-    ArrayList<String> namaHewan2 = new ArrayList<>(List.of("Cicak", "Domba", "Elang", "Gajah", "Badak", "Bebek"));
 
     public static void main(String[] args) {
         Hewan<String> hewan = new Hewan<String>();
@@ -42,32 +41,32 @@ public class Hewan<T> {
         System.out.println("\n=== Tahap 4 ===");
         System.out.println("Index ke-0: " + hewan.namaHewan.get(0));
         System.out.println("Index ke-2: " + hewan.namaHewan.get(2));
+        hewan.namaHewan.remove(0);
         System.out.println("Nama Hewan: " + hewan.namaHewan);
 
         // tahap 5
         System.out.println("\n=== Tahap 5 ===");
-        System.out.println("Nama Hewan: " + hewan.namaHewan2);
+        System.out.println("Nama Hewan: " + hewan.namaHewan);
 
-        hewan.namaHewan2.set(0, "Ular");
-        hewan.namaHewan2.add(2, "Itik");
+        hewan.namaHewan.set(0, "Ular");
+        hewan.namaHewan.add(2, "Itik");
 
-        System.out.println("Nama Hewan: " + hewan.namaHewan2);
+        System.out.println("Nama Hewan: " + hewan.namaHewan);
 
         // tahap 6
         System.out.println("\n=== Tahap 6 ===");
-        hewan.namaHewan2.subList(2, 5).clear();
+        hewan.namaHewan.subList(2, 5).clear();
 
-        System.out.println("Nama Hewan: " + hewan.namaHewan2);
+        System.out.println("Nama Hewan: " + hewan.namaHewan);
 
         // tahap 7
         System.out.println("\n=== Tahap 7 ===");
-        System.out.println("Elemen pertama  : " + hewan.namaHewan2.get(0));
-        System.out.println("Elemen terakhir : " + hewan.namaHewan2.get(hewan.namaHewan2.size() - 1));
+        System.out.println("Elemen pertama  : " + hewan.namaHewan.get(0));
+        System.out.println("Elemen terakhir : " + hewan.namaHewan.get(hewan.namaHewan.size() - 1));
 
         // tahap 8
         System.out.println("\n=== Tahap 8 ===");
-        System.out.println("Total elemen hewan 1 : " + hewan.namaHewan.size());
-        System.out.println("Total elemen hewan 2 : " + hewan.namaHewan2.size());
+        System.out.println("Total elemen hewan : " + hewan.namaHewan.size());
 
         // tahap 9
         System.out.println("\n=== Tahap 9 ===");

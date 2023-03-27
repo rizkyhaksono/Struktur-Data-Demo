@@ -33,33 +33,32 @@ class Hewan:
     print("\n=== Tahap 4 ===")
     print("Index ke-0 : ", namaHewan[0])
     print("Index ke-2 : ", namaHewan[2])
+    namaHewan.remove(namaHewan[0])
     print("Nama Hewan : ", namaHewan)
 
     # tahap 5
-    namaHewan2 = ["Cicak", "Domba", "Elang", "Gajah", "Badak", "Bebek"]
     print("\n=== Tahap 5 ===")
-    print("Nama Hewan : ", namaHewan2)
+    print("Nama Hewan : ", namaHewan)
 
-    namaHewan2[0] = "Ular"
-    namaHewan2.insert(2, "Itik")
+    namaHewan[0] = "Ular"
+    namaHewan.insert(2, "Itik")
 
-    print("Nama Hewan : ", namaHewan2)
+    print("Nama Hewan : ", namaHewan)
 
     # tahap 6
     print("\n=== Tahap 6 ===")
-    del namaHewan2[2:5]
+    del namaHewan[2:5]
 
-    print("Nama Hewan : ", namaHewan2)
+    print("Nama Hewan : ", namaHewan)
 
     # tahap 7
     print("\n=== Tahap 7 ===")
-    print("Elemen pertama : ", namaHewan2[0])
-    print("Elemen terakhir : ", namaHewan2[-1])
+    print("Elemen pertama : ", namaHewan[0])
+    print("Elemen terakhir : ", namaHewan[-1])
 
     # tahap 8
     print("\n=== Tahap 8 ===")
-    print("Total elemen hewan 1 : ", len(namaHewan))
-    print("Total elemen hewan 2 : ", len(namaHewan2))
+    print("Total elemen hewan : ", len(namaHewan))
 
     # tahap 9
     print("\n=== Tahap 9 ===")
