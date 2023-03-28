@@ -10,6 +10,8 @@
 
 This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
+Contributions are welcome! Please read the [contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) first.
+
 <b>⚠️ All codes are my rights and are not allowed to be copied or used without my permission. ⚠️</b>
 
 ## Table of Contents
@@ -49,7 +51,7 @@ The project is structured as follows:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/LICENSE) file for details.
 
 [⬆ back to top](#table-of-contents)
 
