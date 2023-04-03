@@ -10,7 +10,7 @@
 
 This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
-Contributions are welcome! Please read the [contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) first.
+Contributions are welcome! Please read the [contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) first. After that, you can write your name in the [contributors](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/CONTRIBUTING.md) section.
 
 <b>⚠️ All codes are my rights and are not allowed to be copied or used without my permission. ⚠️</b>
 
@@ -48,6 +48,14 @@ The project is structured as follows:
 -   [`src/praktikum4` contains modul 4.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum4)
 -   [`src/praktikum5` contains modul 5.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum5)
 -   [`src/praktikum6` contains modul 6.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum6)
+
+## Code of Conduct
+
+Please read the [Code of Conduct](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/CODE_OF_CONDUCT.md) before contributing to this project.
+
+## Security Policy
+
+Please read the [Security Policy](https://github.com/rizkyhaksono/Struktur-Data-Demo/security/policy) before contributing to this project.
 
 ## License
 
