@@ -14,7 +14,7 @@ public class BFSTraversal {
 
     BFSTraversal(int data) {
         node = data;
-        adj = new LinkedList[node];
+        adj = new LinkedList[data];
 
         for (int i = 0; i < data; i++) {
             adj[i] = new LinkedList<>();
