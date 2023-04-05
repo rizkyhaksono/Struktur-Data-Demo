@@ -10,20 +10,20 @@
 
 This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
-<b>⚠️ All codes are my rights and are not allowed to be copied or used without my permission. ⚠️</b>
+<b>This source code is only for educational purposes. Please do not copy and paste the code without permission. If you want to use this code, please give credit. Thank you.</b>
 
 ## Table of Contents
 
-| No. | Title            | Description                          | Link                    |
-| --- | ---------------- | ------------------------------------ | ----------------------- |
-| 1   | Getting Started  | How to run this project              | [🗿](#gettingstarted)   |
-| 2   | Prerequisites    | What you need to run this project    | [🗿](#prerequisites)    |
-| 3   | Installing       | How to install this project          | [🗿](#installing)       |
-| 4   | Folder Structure | The structure of this project        | [🗿](#folder-structure) |
-| 5   | Code of Conduct  | The code of conduct for this project | [🗿](#code-of-conduct)  |
-| 6   | Security Policy  | The security policy for this project | [🗿](#security-policy)  |
-| 7   | Contributing     | How to contribute to this project    | [🗿](#contributing)     |
-| 8   | License          | The license for this project         | [🗿](#license)          |
+| No. | Title                                 | Description                          |
+| --- | ------------------------------------- | ------------------------------------ |
+| 1   | [Getting Started](#getting-started)   | How to run this project              |
+| 2   | [Prerequisites](#prerequisites)       | What you need to run this project    |
+| 3   | [Installing](#installing)             | How to install this project          |
+| 4   | [Folder Structure](#folder-structure) | The structure of this project        |
+| 5   | [Code of Conduct](#code-of-conduct)   | The code of conduct for this project |
+| 6   | [Security Policy](#security-policy)   | The security policy for this project |
+| 7   | [Contributing](#contributing)         | How to contribute to this project    |
+| 8   | [License](#license)                   | The license for this project         |
 
 ## Getting Started
 
