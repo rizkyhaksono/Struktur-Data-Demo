@@ -10,17 +10,20 @@
 
 This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
-Contributions are welcome! Please read the [contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) first. After that, you can write your name in the [contributors](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/CONTRIBUTING.md) section.
-
 <b>⚠️ All codes are my rights and are not allowed to be copied or used without my permission. ⚠️</b>
 
 ## Table of Contents
 
--   [Getting Started](#getting-started)
--   [Prerequisites](#prerequisites)
--   [Installing](#installing)
--   [Folder Structure](#folder-structure)
--   [License](#license)
+| No. | Title            | Description                          | Link                    |
+| --- | ---------------- | ------------------------------------ | ----------------------- |
+| 1   | Getting Started  | How to run this project              | [🗿](#gettingstarted)   |
+| 2   | Prerequisites    | What you need to run this project    | [🗿](#prerequisites)    |
+| 3   | Installing       | How to install this project          | [🗿](#installing)       |
+| 4   | Folder Structure | The structure of this project        | [🗿](#folder-structure) |
+| 5   | Code of Conduct  | The code of conduct for this project | [🗿](#code-of-conduct)  |
+| 6   | Security Policy  | The security policy for this project | [🗿](#security-policy)  |
+| 7   | Contributing     | How to contribute to this project    | [🗿](#contributing)     |
+| 8   | License          | The license for this project         | [🗿](#license)          |
 
 ## Getting Started
 
@@ -56,6 +59,10 @@ Please read the [Code of Conduct](https://github.com/rizkyhaksono/Struktur-Data-
 ## Security Policy
 
 Please read the [Security Policy](https://github.com/rizkyhaksono/Struktur-Data-Demo/security/policy) before contributing to this project.
+
+## Contributing
+
+Please read the [Contributing Guidelines](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/CONTRIBUTING.md) before contributing to this project.
 
 ## License
 
