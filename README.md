@@ -1,4 +1,4 @@
-﻿# Struktur Data Demo (Data Structure Demo)
+﻿# Struktur Data Demo
 
 [![GitHub license](https://img.shields.io/github/license/rizkyhaksono/Struktur-Data-Demo)](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/rizkyhaksono/Struktur-Data-Demo)]()
@@ -7,6 +7,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/rizkyhaksono/Struktur-Data-Demo)]()
 [![GitHub contributors](https://img.shields.io/github/contributors/rizkyhaksono/Struktur-Data-Demo)]()
 [![GitHub last commit](https://img.shields.io/github/last-commit/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/rizkyhaksono/Struktur-Data-Demo)]()
 
 This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
