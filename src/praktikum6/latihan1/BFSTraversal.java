@@ -35,9 +35,9 @@ public class BFSTraversal {
 
         while (queue.size() != 0) {
             i = queue.poll();
-            System.out.println(i + " ");
+            System.out.print(i + " ");
 
-            for (int j = 0; j < adj[a].size(); j++) {
+            for (int j = 0; j < adj[i].size(); j++) {
                 a = adj[i].get(j);
 
                 if (!nodes[a]) {
@@ -52,19 +52,18 @@ public class BFSTraversal {
         BFSTraversal graph = new BFSTraversal(6);
 
         graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
-        graph.insertEdge(0, 1);
+        graph.insertEdge(0, 3);
+        graph.insertEdge(0, 4);
+        graph.insertEdge(4, 5);
+        graph.insertEdge(3, 5);
+        graph.insertEdge(1, 2);
+        graph.insertEdge(1, 0);
+        graph.insertEdge(2, 1);
+        graph.insertEdge(4, 1);
+        graph.insertEdge(3, 1);
+        graph.insertEdge(5, 4);
         graph.insertEdge(5, 3);
-        System.out.println("Breadth first traversal for the graph is: ");
+        System.out.println("Breadth First Traversal for the graph is: ");
         graph.BFS(0);
     }
 }
