@@ -8,6 +8,23 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/rizkyhaksono/Struktur-Data-Demo)]()
 [![GitHub last commit](https://img.shields.io/github/last-commit/rizkyhaksono/Struktur-Data-Demo)]()
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub repo size](https://img.shields.io/github/repo-size/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub language count](https://img.shields.io/github/languages/count/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub top language](https://img.shields.io/github/languages/top/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/rizkyhaksono/Struktur-Data-Demo)]()
+[![GitHub all releases](https://img.shields.io/github/downloads/rizkyhaksono/Struktur-Data-Demo/total)]()
+[![GitHub search hit counter](https://img.shields.io/github/search/rizkyhaksono/Struktur-Data-Demo/Struktur-Data-Demo)]()
+
+[![GitHub followers](https://img.shields.io/github/followers/rizkyhaksono?style=social)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+[![GitHub Repo stars](https://img.shields.io/github/stars/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+[![GitHub forks](https://img.shields.io/github/forks/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+[![GitHub issues](https://img.shields.io/github/issues/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+[![GitHub contributors](https://img.shields.io/github/contributors/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+[![GitHub last commit](https://img.shields.io/github/last-commit/rizkyhaksono/Struktur-Data-Demo?style=social)]()
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/rizkyhaksono/Struktur-Data-Demo?style=social)
 
 This repository contains the source code of the Data Structure project using Java and Python. Also, made for the Data Structure course at the University of Muhammadiyah Malang.
 
