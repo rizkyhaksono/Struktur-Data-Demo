@@ -1,5 +1,7 @@
 package praktikum3.kegiatan1;
 
+import java.util.Scanner;
+
 public class StackReversed<T> {
 
     private T data[];
@@ -64,5 +66,20 @@ public class StackReversed<T> {
         stackInt.show();
         System.out.print("\nReversed: ");
         stackInt.reversed();
+
+        // input an user
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("\nMasukkan input: ");
+            String input = sc.nextLine();
+
+            StackReversed<Character> stackChar = new StackReversed<>();
+
+            for (int i = 0; i < input.length(); i++) {
+                stackChar.push(input.charAt(i));
+            }
+
+            System.out.print("\nReversed: ");
+            stackChar.reversed();
+        }
     }
 }
