@@ -49,7 +49,7 @@ public class DataPraktikan {
     }
 
     public void listNimPraktikan() {
-        System.out.println("--List NIM--");
+        System.out.println("--- List NIM ---");
         for (Entry<String, String> entry : tabelData.entrySet()) {
             if (entry.getKey() != null) {
                 String key = entry.getKey();
@@ -88,6 +88,7 @@ public class DataPraktikan {
             System.out.println("====================================");
             System.out.println("Masukkan data baru!");
 
+            // tabelData.remove(nimPraktikan);
             System.out.print("Masukkan NIM: ");
             String nimBaru = scn.nextLine();
 
@@ -149,159 +150,154 @@ public class DataPraktikan {
         System.out.print("Masukkan password: ");
         String password = scanner.nextLine();
 
-        try {
-            if (username.contains("@umm.ac.id")) {
-                String[] split = username.split("@");
-                username = split[0];
+        if (username.contains("@umm.ac.id")) {
+            String[] split = username.split("@");
+            username = split[0];
 
-                while (dp.tabelSesiLogin.containsKey(username) && dp.tabelSesiLogin.get(username).equals(password)) {
-                    System.out.println("====================================");
-                    System.out.println("Selamat datang " + username);
-                    System.out.println("====================================\n");
-                    System.out.println("1. Tambah Data" +
-                            "\n2. Tampil Data" +
-                            "\n3. List NIM Praktikan" +
-                            "\n4. List Nama Asisten" +
-                            "\n5. Total Email" +
-                            "\n6. Hapus Data" +
-                            "\n7. Edit Data" +
-                            "\n8. Search Data" +
-                            "\n9. Logout");
+            while (dp.tabelSesiLogin.containsKey(username) &&
+                    dp.tabelSesiLogin.get(username).equals(password)) {
+                System.out.println("====================================");
+                System.out.println("Selamat datang " + username);
+                System.out.println("====================================\n");
+                System.out.println("1. Tambah Data" +
+                        "\n2. Tampil Data" +
+                        "\n3. List NIM Praktikan" +
+                        "\n4. List Nama Asisten" +
+                        "\n5. Total Email" +
+                        "\n6. Hapus Data" +
+                        "\n7. Edit Data" +
+                        "\n8. Search Data" +
+                        "\n9. Logout");
 
-                    System.out.print("Masukkan pilihan: ");
-                    int pilihan = scanner.nextInt();
+                System.out.print("Masukkan pilihan: ");
+                int pilihan = scanner.nextInt();
 
-                    switch (pilihan) {
-                        case 1: {
-                            System.out.println("\n--- Tambah Data ---");
-                            System.out.println("====================================");
-                            System.out.print("Masukkan NIM: ");
-                            String nimPraktikan = scanner.next();
+                switch (pilihan) {
+                    case 1: {
+                        System.out.println("\n--- Tambah Data ---");
+                        System.out.println("====================================");
+                        System.out.print("Masukkan NIM: ");
+                        String nimPraktikan = scanner.next();
 
-                            System.out.print("Masukkan Nama Asisten: ");
-                            String namaAsisten = scanner.next();
+                        System.out.print("Masukkan Nama Asisten: ");
+                        String namaAsisten = scanner.next();
 
-                            dp.tambahData(nimPraktikan, namaAsisten);
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 2: {
-                            System.out.println("\n--- Tampil Data ---");
-                            System.out.println("====================================");
-                            dp.tampil();
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 3: {
-                            System.out.println("\n--- Tampil Data NIM Praktikan ---");
-                            System.out.println("====================================");
-                            dp.listNimPraktikan();
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 4: {
-                            System.out.println("\n--- Tampil Data Nama Asisten ---");
-                            System.out.println("====================================");
-                            dp.listNamaPraktikan();
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 5: {
-                            System.out.println("\n====================================");
-                            System.out.println("Total email yang terdaftar : " + dp.totalEmail());
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 6: {
-                            System.out.println("\n--- Hapus Data ---");
-                            System.out.println("====================================");
-                            System.out.print("Masukkan NIM: ");
-                            String nimPraktikan = scanner.next();
+                        dp.tambahData(nimPraktikan, namaAsisten);
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 2: {
+                        System.out.println("\n--- Tampil Data ---");
+                        System.out.println("====================================");
+                        dp.tampil();
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 3: {
+                        System.out.println("\n--- Tampil Data NIM Praktikan ---");
+                        System.out.println("====================================");
+                        dp.listNimPraktikan();
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 4: {
+                        System.out.println("\n--- Tampil Data Nama Asisten ---");
+                        System.out.println("====================================");
+                        dp.listNamaPraktikan();
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 5: {
+                        System.out.println("\n====================================");
+                        System.out.println("Total email yang terdaftar : " + dp.totalEmail());
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 6: {
+                        System.out.println("\n--- Hapus Data ---");
+                        System.out.println("====================================");
+                        System.out.print("Masukkan NIM: ");
+                        String nimPraktikan = scanner.next();
 
-                            System.out.print("Masukkan Nama Asisten: ");
-                            String namaAsisten = scanner.next();
+                        System.out.print("Masukkan Nama Asisten: ");
+                        String namaAsisten = scanner.next();
 
-                            dp.hapusData(nimPraktikan, namaAsisten);
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 7: {
-                            System.out.println("\n--- Edit Data ---");
-                            System.out.println("====================================");
-                            System.out.print("Masukkan NIM: ");
-                            String nimPraktikan = scanner.next();
+                        dp.hapusData(nimPraktikan, namaAsisten);
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 7: {
+                        System.out.println("\n--- Edit Data ---");
+                        System.out.println("====================================");
+                        System.out.print("Masukkan NIM: ");
+                        String nimPraktikan = scanner.next();
 
-                            System.out.print("Masukkan Nama Asisten: ");
-                            String namaAsisten = scanner.next();
+                        System.out.print("Masukkan Nama Asisten: ");
+                        String namaAsisten = scanner.next();
 
-                            dp.editData(nimPraktikan, namaAsisten);
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 8: {
-                            System.out.println("\n--- Search Data ---");
-                            System.out.println("====================================");
-                            System.out.print("Masukkan NIM: ");
-                            String nimPraktikan = scanner.next();
+                        dp.editData(nimPraktikan, namaAsisten);
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 8: {
+                        System.out.println("\n--- Search Data ---");
+                        System.out.println("====================================");
+                        System.out.print("Masukkan NIM: ");
+                        String nimPraktikan = scanner.next();
 
-                            System.out.print("Masukkan Nama Asisten: ");
-                            String namaAsisten = scanner.next();
+                        System.out.print("Masukkan Nama Asisten: ");
+                        String namaAsisten = scanner.next();
 
-                            dp.searchData(nimPraktikan, namaAsisten);
-                            System.out.println("====================================\n");
-                            break;
-                        }
-                        case 9: {
-                            System.out.println("\n--- Logout ---");
-                            System.out.println("====================================");
+                        dp.searchData(nimPraktikan, namaAsisten);
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    case 9: {
+                        System.out.println("\n--- Logout ---");
+                        System.out.println("====================================");
+                        System.out.print("Masukkan username: ");
+                        String user = scanner.next();
+
+                        System.out.print("Masukkan password: ");
+                        String pass = scanner.next();
+
+                        while (!user.contains("@umm.ac.id")) {
+                            System.out.println("Domain anda bukan @umm.ac.id");
                             System.out.print("Masukkan username: ");
-                            String user = scanner.next();
+                            user = scanner.next();
 
                             System.out.print("Masukkan password: ");
-                            String pass = scanner.next();
-
-                            while (!user.contains("@umm.ac.id")) {
-                                System.out.println("Domain anda bukan @umm.ac.id");
-                                System.out.print("Masukkan username: ");
-                                user = scanner.next();
-
-                                System.out.print("Masukkan password: ");
-                                pass = scanner.next();
-                                if (user.contains("@umm.ac.id")) {
-                                    break;
-                                }
+                            pass = scanner.next();
+                            if (user.contains("@umm.ac.id")) {
+                                break;
                             }
-
-                            String[] splitted = user.split("@");
-                            user = splitted[0];
-                            dp.logout(user, pass);
-
-                            System.out.println("====================================\n");
-                            break;
                         }
-                        default: {
-                            System.out.println("\n====================================");
-                            System.out.println("Pilihan tidak ada");
-                            System.out.println("====================================\n");
-                            break;
-                        }
+
+                        String[] splitted = user.split("@");
+                        user = splitted[0];
+                        dp.logout(user, pass);
+
+                        System.out.println("====================================\n");
+                        break;
+                    }
+                    default: {
+                        System.out.println("\n====================================");
+                        System.out.println("Pilihan tidak ada");
+                        System.out.println("====================================\n");
+                        break;
                     }
                 }
-            } else {
-                System.out.println("Domain anda bukan @umm.ac.id");
-                main(args);
             }
-
-            if (password != dp.tabelSesiLogin.get(username)) {
-                System.out.println("Password atau username anda salah");
-                main(args);
-            }
-        } catch (Exception e) {
-            System.out.println("\n====================================");
-            System.out.println("Argument tidak valid");
-            System.out.println("====================================");
+        } else {
+            System.out.println("Domain anda bukan @umm.ac.id");
             main(args);
         }
+
+        // if (password != dp.tabelSesiLogin.get(username)) {
+        // System.out.println("Password atau username anda salah");
+        // // main(args);
+        // }
+
         scanner.close();
     }
 }
