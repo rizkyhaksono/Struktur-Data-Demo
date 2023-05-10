@@ -293,11 +293,6 @@ public class DataPraktikan {
             main(args);
         }
 
-        // if (password != dp.tabelSesiLogin.get(username)) {
-        // System.out.println("Password atau username anda salah");
-        // // main(args);
-        // }
-
         scanner.close();
     }
 }
