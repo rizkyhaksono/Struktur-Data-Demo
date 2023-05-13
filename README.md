@@ -35,6 +35,7 @@ This repository contains the source code of the Data Structure project using Jav
 | 6   | [Security Policy](#security-policy)   | The security policy for this project |
 | 7   | [Contributing](#contributing)         | How to contribute to this project    |
 | 8   | [License](#license)                   | The license for this project         |
+| 9   | [Acknowledgments](#acknowledgments)   | Credits and inspiration              |
 
 ## Getting Started
 
@@ -43,13 +44,15 @@ This repository contains the source code of the Data Structure project using Jav
 -   Java 8 or higher
 -   Python 3.8 or higher
 -   Git 2.25.1 or higher
--   IDE (IntelliJ IDEA, PyCharm, Vs Code, etc.)
+-   Gradle 6.8.3 or higher
+-   IDE (IntelliJ IDEA, VSCode, etc.)
 
 ### Installing
 
 1. Clone this repository
 2. Open the project in your IDE
 3. Run the project
+4. Choose the module you want to run
 
 ## Folder Structure
 
@@ -78,6 +81,10 @@ Please read the [Contributing Guidelines](https://github.com/rizkyhaksono/Strukt
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/LICENSE) file for details.
+
+## Acknowledgments
+
+-   [Java Remove Linkedlist](https://www.w3resource.com/java-tutorial/arraylist/arraylist_removerange.php)
 
 [⬆ back to top](#table-of-contents)
 
