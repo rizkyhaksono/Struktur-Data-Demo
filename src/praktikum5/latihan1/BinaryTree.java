@@ -23,7 +23,6 @@ public class BinaryTree {
         } else {
             root.right = NewNode(root.right, newData);
         }
-
         return root;
     }
 
