@@ -85,6 +85,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Acknowledgments
 
 -   [Java Remove Linkedlist](https://www.w3resource.com/java-tutorial/arraylist/arraylist_removerange.php)
+-   [Java Tree Traversals](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+-   [ofc our lecturer](https://chat.openai.com)
 
 [⬆ back to top](#table-of-contents)
 
