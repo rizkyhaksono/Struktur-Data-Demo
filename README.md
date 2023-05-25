@@ -23,6 +23,8 @@ This repository contains the source code of the Data Structure project using Jav
 
 <b>This source code is only for educational purposes. Please do not copy and paste the code without permission. If you want to use this code, please give credit. Thank you.</b>
 
+---
+
 ## Table of Contents
 
 | No. | Title                                 | Description                          |
@@ -66,21 +68,31 @@ The project is structured as follows:
 -   [`src/praktikum5` contains modul 5.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum5)
 -   [`src/praktikum6` contains modul 6.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum6)
 
+---
+
 ## Code of Conduct
 
 Please read the [Code of Conduct](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/CODE_OF_CONDUCT.md) before contributing to this project.
+
+---
 
 ## Security Policy
 
 Please read the [Security Policy](https://github.com/rizkyhaksono/Struktur-Data-Demo/security/policy) before contributing to this project.
 
+---
+
 ## Contributing
 
 Please read the [Contributing Guidelines](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/CONTRIBUTING.md) before contributing to this project.
 
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/rizkyhaksono/Struktur-Data-Demo/blob/main/LICENSE) file for details.
+
+---
 
 ## Acknowledgments
 
