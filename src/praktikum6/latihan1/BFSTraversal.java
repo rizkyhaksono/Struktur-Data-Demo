@@ -19,7 +19,6 @@ public class BFSTraversal {
         for (int i = 0; i < data; i++) {
             adj[i] = new LinkedList<>();
         }
-
         queue = new LinkedList<Integer>();
     }
 
