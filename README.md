@@ -61,12 +61,12 @@ This repository contains the source code of the Data Structure project using Jav
 The project is structured as follows:
 
 -   [`src/` contains the source code of the library.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src)
--   [`src/praktikum1` contains modul 1.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum1)
--   [`src/praktikum2` contains modul 2.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum2)
--   [`src/praktikum3` contains modul 3.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum3)
--   [`src/praktikum4` contains modul 4.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum4)
--   [`src/praktikum5` contains modul 5.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum5)
--   [`src/praktikum6` contains modul 6.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum6)
+-   [`src/praktikum1` contains module 1.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum1)
+-   [`src/praktikum2` contains module 2.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum2)
+-   [`src/praktikum3` contains module 3.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum3)
+-   [`src/praktikum4` contains module 4.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum4)
+-   [`src/praktikum5` contains module 5.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum5)
+-   [`src/praktikum6` contains module 6.](https://github.com/rizkyhaksono/Struktur-Data-Demo/tree/main/src/praktikum6)
 
 ---
 
