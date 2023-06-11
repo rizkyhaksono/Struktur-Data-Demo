@@ -4,60 +4,54 @@
 
 package praktikum6.kegiatan;
 
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class DFSDemo {
-
-    private LinkedList<Integer> adj[];
-    private boolean visited[];
+    private int vertices;
+    private LinkedList<Integer>[] adj;
 
     DFSDemo(int v) {
+        vertices = v;
         adj = new LinkedList[v];
-        visited = new boolean[v];
 
         for (int i = 0; i < v; i++) {
-            adj[i] = new LinkedList<Integer>();
+            adj[i] = new LinkedList<>();
         }
     }
 
-    void insertEdge(int src, int dest) {
-        adj[src].add(dest);
+    void dfs(int startNode) {
+        boolean[] visited = new boolean[vertices];
+        dfsUtil(startNode, visited);
     }
 
-    void DFS(int vertex) {
-        visited[vertex] = true;
-        System.out.print(vertex + " ");
+    void addEdge(int v, int w) {
+        adj[v].add(w);
+    }
 
-        Iterator<Integer> it = adj[vertex].listIterator();
-        while (it.hasNext()) {
-            int n = it.next();
+    void dfsUtil(int v, boolean[] visited) {
+        visited[v] = true;
+        System.out.print(v + " ");
+
+        Iterator<Integer> i = adj[v].listIterator();
+        while (i.hasNext()) {
+            int n = i.next();
             if (!visited[n]) {
-                DFS(n);
+                dfsUtil(n, visited);
             }
         }
     }
 
     public static void main(String[] args) {
-        DFSDemo graph = new DFSDemo(12);
+        DFSDemo graph = new DFSDemo(7);
 
-        graph.insertEdge(1, 4);
-        graph.insertEdge(1, 2);
-        graph.insertEdge(2, 1);
-        graph.insertEdge(2, 5);
-        graph.insertEdge(4, 6);
-        graph.insertEdge(5, 2);
-        graph.insertEdge(5, 3);
-        graph.insertEdge(5, 7);
-        graph.insertEdge(6, 7);
-        graph.insertEdge(7, 6);
-        graph.insertEdge(7, 11);
-        graph.insertEdge(9, 5);
-        graph.insertEdge(9, 8);
-        graph.insertEdge(8, 11);
-        graph.insertEdge(11, 10);
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(1, 3);
+        graph.addEdge(1, 4);
+        graph.addEdge(2, 5);
+        graph.addEdge(2, 6);
 
-        System.out.println("Depth First Traversal for the graph is: ");
-        graph.DFS(1);
+        System.out.println("Hasil DFS: ");
+        graph.dfs(0);
     }
 }

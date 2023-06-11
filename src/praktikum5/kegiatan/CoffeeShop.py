@@ -1,3 +1,6 @@
+__author__      = "rizkyhaksono"
+__copyright__   = "Copyright 2023, Malang"
+
 class CoffeeShop:
     def __init__(self, data):
         self.data = data

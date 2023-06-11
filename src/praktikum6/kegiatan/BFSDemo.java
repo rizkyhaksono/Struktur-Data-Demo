@@ -4,72 +4,57 @@
 
 package praktikum6.kegiatan;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
-public class BFSDemo {
+class BFSDemo {
+    private int V;
+    private LinkedList<Integer>[] adjacencyList;
 
-    private int node;
-    private LinkedList<Integer> adj[];
-    private Queue<Integer> queue;
-
-    BFSDemo(int data) {
-        node = data;
-        adj = new LinkedList[data];
-
-        for (int i = 0; i < data; i++) {
-            adj[i] = new LinkedList<>();
+    BFSDemo(int v) {
+        V = v;
+        adjacencyList = new LinkedList[v];
+        for (int i = 0; i < v; ++i) {
+            adjacencyList[i] = new LinkedList();
         }
-
-        queue = new LinkedList<Integer>();
     }
 
-    void insertEdge(int i, int j) {
-        adj[i].add(j);
+    void addEdge(int v, int w) {
+        adjacencyList[v].add(w);
     }
 
-    void BFS(int i) {
-        boolean nodes[] = new boolean[node];
-        int a = 0;
-        nodes[i] = true;
-        queue.add(i);
+    void bfs(int startNode) {
+        boolean[] visited = new boolean[V];
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+
+        visited[startNode] = true;
+        queue.add(startNode);
 
         while (queue.size() != 0) {
-            i = queue.poll();
-            System.out.print(i + " ");
+            startNode = queue.poll();
+            System.out.print(startNode + " ");
 
-            for (int j = 0; j < adj[i].size(); j++) {
-                a = adj[i].get(j);
-
-                if (!nodes[a]) {
-                    nodes[a] = true;
-                    queue.add(a);
+            Iterator<Integer> i = adjacencyList[startNode].listIterator();
+            while (i.hasNext()) {
+                int n = i.next();
+                if (!visited[n]) {
+                    visited[n] = true;
+                    queue.add(n);
                 }
             }
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String args[]) {
+        BFSDemo graph = new BFSDemo(7);
 
-        BFSDemo graph = new BFSDemo(12);
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(1, 3);
+        graph.addEdge(1, 4);
+        graph.addEdge(2, 5);
+        graph.addEdge(2, 6);
 
-        graph.insertEdge(1, 4);
-        graph.insertEdge(1, 2);
-        graph.insertEdge(2, 1);
-        graph.insertEdge(2, 5);
-        graph.insertEdge(4, 6);
-        graph.insertEdge(5, 2);
-        graph.insertEdge(5, 3);
-        graph.insertEdge(5, 7);
-        graph.insertEdge(6, 7);
-        graph.insertEdge(7, 6);
-        graph.insertEdge(7, 11);
-        graph.insertEdge(9, 5);
-        graph.insertEdge(9, 8);
-        graph.insertEdge(8, 11);
-        graph.insertEdge(11, 10);
-
-        System.out.println("Breadth first traversal for the graph is: ");
-        graph.BFS(1);
+        System.out.println("Hasil BFS:");
+        graph.bfs(0);
     }
 }
