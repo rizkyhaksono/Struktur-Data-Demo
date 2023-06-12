@@ -4,7 +4,8 @@
 
 package praktikum6.kegiatan;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 class BFSDemo {
     private int V;
@@ -14,7 +15,7 @@ class BFSDemo {
         V = v;
         adjacencyList = new LinkedList[v];
         for (int i = 0; i < v; ++i) {
-            adjacencyList[i] = new LinkedList();
+            adjacencyList[i] = new LinkedList<Integer>();
         }
     }
 
@@ -45,16 +46,30 @@ class BFSDemo {
     }
 
     public static void main(String args[]) {
-        BFSDemo graph = new BFSDemo(7);
+        BFSDemo graph = new BFSDemo(20);
 
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(1, 3);
+        graph.addEdge(1, 2);
         graph.addEdge(1, 4);
         graph.addEdge(2, 5);
-        graph.addEdge(2, 6);
+        graph.addEdge(2, 1);
+        graph.addEdge(5, 2);
+        graph.addEdge(5, 3);
+        graph.addEdge(5, 9);
+        graph.addEdge(5, 7);
+        graph.addEdge(9, 5);
+        graph.addEdge(9, 8);
+        graph.addEdge(4, 6);
+        graph.addEdge(6, 7);
+        graph.addEdge(4, 6);
+        graph.addEdge(6, 7);
+        graph.addEdge(7, 6);
+        graph.addEdge(7, 11);
+        graph.addEdge(8, 9);
+        graph.addEdge(8, 11);
+        graph.addEdge(11, 7);
+        graph.addEdge(11, 10);
 
         System.out.println("Hasil BFS:");
-        graph.bfs(0);
+        graph.bfs(1);
     }
 }
