@@ -1,5 +1,6 @@
-__author__      = "rizkyhaksono"
-__copyright__   = "Copyright 2023, Malang"
+__author__ = "rizkyhaksono"
+__copyright__ = "Copyright 2023, Malang"
+
 
 class DFS:
     def __init__(self):
@@ -25,6 +26,7 @@ class DFS:
         visited = set()
         self.dfs_util(start_node, visited)
 
+
 if __name__ == '__main__':
     graph = DFS()
 
@@ -45,7 +47,7 @@ if __name__ == '__main__':
     graph.add_edge(8, 9)
     graph.add_edge(8, 11)
     graph.add_edge(11, 7)
-    graph.add_edge(1, 10)
+    graph.add_edge(11, 10)
 
     print("Hasil DFS:")
     graph.dfs(1)
